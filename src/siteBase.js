@@ -44,7 +44,7 @@ function createNav() {
     const contactButton = document.createElement("button");
     contactButton.classList.add("nav-button");
     contactButton.textContent = "Contact";
-    homeButton.addEventListener("click", (e) => {
+    contactButton.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactButton);
         loadContact();
@@ -69,11 +69,25 @@ function setActiveButton(button) {
     button.classList.add("active");
 }
 
+function createMain() {
+    const main = document.createElement("div");
+    main.classList.add("main");
+    main.setAttribute("id", "main");
+    return main;
+}
+
+
 
 function startWebsite() {
     const content = document.getElementById("content");
 
     content.appendChild(createHeader());
+    content.appendChild(createMain());
+
+
+    setActiveButton(document.querySelector(".nav-button"));
+    loadHome();
+
 }
 
 
