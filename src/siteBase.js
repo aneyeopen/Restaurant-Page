@@ -13,7 +13,7 @@ function createHeader() {
     restaurantName.textContent = "Scran St Radio";
 
     header.appendChild(restaurantName);
-    header.appendChild(createNav());
+    
 
 
     return header;
@@ -82,6 +82,7 @@ function startWebsite() {
     const content = document.getElementById("content");
 
     content.appendChild(createHeader());
+    content.appendChild(createNav());
     content.appendChild(createMain());
 
 

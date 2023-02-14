@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'stayvibes';
+    src: url('../src/Resources/Fonts/stayvibes/StayVibes.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+
+}
+
+
+.header {
+    width: 100%;
+    background: url(../src/Resources/Styling-Images/ScranBG.jpeg) no-repeat fixed;
+    height: 320px;
+    background-size: contain; /* or "contain" depending on what you want */
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    text-align:center;
+    margin:auto;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant-name {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.15);
+    font-family: 'stayvibes';
+    font-size: 120px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-bar button {
+    border-style: none;
+
+}
+
+.food-image {
+    max-width: 250px;
+    border-radius: 5%;
+}
