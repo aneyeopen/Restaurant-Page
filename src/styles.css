@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'brandon-grotesque';
+    src: url('../src/Resources/Fonts/Brandon-Grotesque-Font-Family/brandon-grotesque-thin-italic-58a8a3a8861fe.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -59,10 +66,73 @@ body {
 
 .nav-bar button {
     border-style: none;
+    font-family: 'brandon-grotesque';
+    background-color: bisque;
+    font-size: 40px;
+    color: grey;
+    width: 50vh;
 
 }
 
+
+.active {
+    color: black !important;
+}
+
 .food-image {
-    max-width: 250px;
+    width: 400px;
     border-radius: 5%;
+    height: 400px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
+
+.menu-item {
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.home p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    padding: 40px;
+    font-size: 30px;
+    font-family: Helvetica, sans-serif;
+    max-width: 75%;
+}
+
+.home img {
+    max-width: 70%;
+    border-radius: 5%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    padding: 50px;
+    margin: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
